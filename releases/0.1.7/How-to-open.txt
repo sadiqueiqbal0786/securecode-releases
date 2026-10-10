@@ -1,0 +1,28 @@
+SecureCode Auditor — how to open it the first time
+==================================================
+
+1. Drag "SecureCode Auditor" onto the Applications folder.
+
+2. Open it from Applications. macOS says it cannot verify the app
+   ("Apple could not verify ... is free of malware"). Click Done.
+   This happens because the app is not yet notarised by Apple — it is
+   signed, and the download has not been changed.
+
+3. Open System Settings > Privacy & Security, scroll down to
+   "SecureCode Auditor was blocked", and click "Open Anyway".
+   Enter your Mac password, then click "Open Anyway" again.
+
+That is only needed once. After that it opens like any other app.
+
+Prefer Terminal? This does the same (after step 1):
+
+    xattr -dr com.apple.quarantine "/Applications/SecureCode Auditor.app"
+
+Check your download (optional): in Terminal run
+    shasum -a 256 ~/Downloads/SecureCode-Auditor-*.dmg
+and compare it with the checksum published next to the download.
+
+Needs: a Mac with Apple Silicon (M1 or later), and Docker Desktop,
+OrbStack, Colima or Podman — the app's first-run guide helps with that.
+
+Questions: sadiqueiqbal.si@gmail.com
