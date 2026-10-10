@@ -1,3 +1,5 @@
+> **Superseded by 0.1.8.** This build reports its own version as 0.1.6, so it announces an update to itself and keeps offering one. Everything else in it behaves as described below. Please install 0.1.8 instead.
+
 SecureCode Auditor 0.1.7 for Apple Silicon Macs. **A clean branch is not a clean project — the app now says what is left to do.**
 
 Three rules also stopped judging code by what it is called.
